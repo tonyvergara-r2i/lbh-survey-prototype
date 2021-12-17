@@ -1,0 +1,645 @@
+<html>
+<head>
+    
+    <!-- Hotjar Tracking Code for https://tonyvergara-r2i.github.io/ -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2751233,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <style type="text/css">
+        .content-section {
+          min-height: 2000px;
+        }
+        .sidebar-section {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+        }
+
+
+        .sidebar-item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            
+            /* Position the items */
+            // &:nth-child(2) { top: 25%; }
+            // &:nth-child(3) { top: 50%; }
+            // &:nth-child(4) { top: 75%; }
+        }
+        .sidebar-item li {
+            list-style-type: none;
+            border-left: 5px solid #fce300;
+            margin: 8px 0;
+            padding-left: 8px;
+            padding: 4px 0 4px 8px;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+        .sidebar-item a {
+            color: #2d2c2b;
+        }
+        .sidebar-item li:hover,.sidebar-item li:active {
+            background-color: #fce300;
+        }
+        .sidebar-item ul {
+            padding-left: 8px;
+        }
+
+        .make-me-sticky {
+          position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            
+          padding: 0 15px;
+        }
+        .content-section h3 {
+            margin-top: 60px!important;
+            text-decoration-line: underline;
+            text-decoration-style: "solid";
+            text-decoration-color: #fce300;
+            text-decoration-thickness: 5px;
+            text-underline-position: under;
+            margin-bottom: 10px;
+        }
+        #goals h3 {
+            margin-top: inherit!important;
+        }
+
+
+        /* Ignore This, just coloring */
+        body {
+          background: #fff;
+        }
+
+
+        .title-section, .content-section, .sidebar-section {
+          background: #fff;
+          // border-radius: 12px;
+          // border: solid 10px #f1f1f1; 
+        }
+
+        .title-section {
+          text-align: center;
+          padding: 50px 15px;
+          margin-bottom: 30px;
+        }
+
+        .content-section h2 {
+          text-align: center;
+          margin: 0;
+          padding-top: 200px;
+        }
+
+        .sidebar-item {
+          background: #fff;
+        }  
+        h3 {
+            max-width: 100%;
+            margin: 0 auto;
+            border-bottom: solid 1px #fff;
+            padding: 1rem 0 .5rem 0;
+        }
+        #hero {
+            background: #47d7a7;
+        }
+        .alert {
+            font-size: 24px;
+            padding: 24px;
+        }
+        .goal-icon {
+            margin-right: 12px;
+        }
+        table > * > * > * {border: 1px solid black;}
+    </style>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <section id="hero"> 
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                  <div class="col-10 col-sm-8 col-lg-4">
+                    <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                  </div>
+                  <div class="col-lg-8">
+                    <h6>LIFEBRIDGE HEALTH + R2i</h6>
+                    <h1 class="display-5 fw-bold lh-1 mb-3">User Survey Prototype & Documentation</h1>
+                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section class="container mt-4">
+            <div class="row">
+                <div class="col-3">
+
+                  <div class="sidebar-item px-4">
+                    <div class="make-me-sticky">
+                      <h3 class="h6 mt-8">USER SURVEY</h3>
+                      <nav id="sidebar-nav">
+                          <li><a href="#background">Background</a></li>
+                          <li><a href="#goals">Goals</a></li>
+                          <li><a href="#targeting">Targeting & Sampling</a></li>
+                          <li><a href="#administration">Administration & Tools</a></li>
+                          <li><a href="#quality">Ensuring Quality</a></li>
+                          <li><a href="#budget">Budget & Timeline</a></li>
+                          <li><a href="#roles">Roles & Responsibilities</a></li>
+                          <li><a href="#questions">Survey Topics & Questions</a></li>
+                          <li><a href="#resources">Resources</a></li>
+                          <h6 class="mt-4">SURVEY TOOL SAMPLES</h6>
+                          <li>Typeform</li>
+                          <li>SurveyMonkey</li>
+                          <li>Mouseflow</li>
+                          <li>HotJar</li>
+                          
+
+                      </nav>
+                    </div>
+                  </div>
+              
+
+                </div>
+                <div class="col-9">
+
+                    <div class="content-section" data-spy="scroll" data-target="#sidebar-navbar" data-offset="0">
+                        
+
+                        <div class="alert alert-info" id="background" role="alert">The website redesign feedback survey for LifeBridge Health was developed to collect information on key issues and opportunities that we should know about as we begin to redesign the website. We aim to improve the content of this survey through an iterative review process.</div>
+
+                            <ol class="list-group my-4" id="goals" style="flex-direction: row;flex-wrap: wrap;">
+                              <li class="d-flex align-items-center col-lg-6 my-2">
+                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="goal-icon"><path d="M24 20l-6.455 4-5.545-4-5.545 4-6.455-4v-20l6.455 4 5.545-4 5.545 4 6.455-4v20zm-11.5-13h-1v-5.406l-4.5 3.246v4.16h-1v-4.106l-5-3.098v17.647l5 3.099v-6.542h1v6.374l4.5-3.246v-5.128h1v5.128l4.5 3.246v-5.374h1v5.542l5-3.099v-17.647l-5 3.098v3.106h-1v-3.16l-4.5-3.246v5.406zm8.172 7.016l-1.296-1.274 1.273-1.293-.708-.702-1.272 1.294-1.294-1.271-.703.702 1.296 1.276-1.273 1.296.703.703 1.277-1.298 1.295 1.275.702-.708zm-14.102-.606c-.373 0-.741-.066-1.092-.195l.407-1.105c.221.081.451.122.685.122.26 0 .514-.05.754-.149l.448 1.09c-.383.157-.787.237-1.202.237zm-2.601-2.374c-.535 0-.969.433-.969.968 0 .534.434.968.969.968.535 0 .969-.434.969-.968 0-.535-.434-.968-.969-.968zm11.271 1.591l-1.659-.945.583-1.024 1.66.945-.584 1.024zm-6.455-.02l-.605-1.011 1.638-.981.606 1.01-1.639.982zm3.918-1.408c-.243-.101-.5-.153-.763-.153-.231 0-.457.04-.674.118l-.402-1.108c.346-.125.708-.188 1.076-.188.419 0 .83.082 1.216.243l-.453 1.088z"/></svg>
+                                <div class="ms-2 me-auto">
+                                  <h3 class="fw-bold">GOAL 1</h3>
+                                   What information people are looking for as they seek care at LBH?
+                                </div>
+                              </li>
+                              <li class="d-flex align-items-center col-lg-6 my-2">
+                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="goal-icon"><path d="M24 20l-6.455 4-5.545-4-5.545 4-6.455-4v-20l6.455 4 5.545-4 5.545 4 6.455-4v20zm-11.5-13h-1v-5.406l-4.5 3.246v4.16h-1v-4.106l-5-3.098v17.647l5 3.099v-6.542h1v6.374l4.5-3.246v-5.128h1v5.128l4.5 3.246v-5.374h1v5.542l5-3.099v-17.647l-5 3.098v3.106h-1v-3.16l-4.5-3.246v5.406zm8.172 7.016l-1.296-1.274 1.273-1.293-.708-.702-1.272 1.294-1.294-1.271-.703.702 1.296 1.276-1.273 1.296.703.703 1.277-1.298 1.295 1.275.702-.708zm-14.102-.606c-.373 0-.741-.066-1.092-.195l.407-1.105c.221.081.451.122.685.122.26 0 .514-.05.754-.149l.448 1.09c-.383.157-.787.237-1.202.237zm-2.601-2.374c-.535 0-.969.433-.969.968 0 .534.434.968.969.968.535 0 .969-.434.969-.968 0-.535-.434-.968-.969-.968zm11.271 1.591l-1.659-.945.583-1.024 1.66.945-.584 1.024zm-6.455-.02l-.605-1.011 1.638-.981.606 1.01-1.639.982zm3.918-1.408c-.243-.101-.5-.153-.763-.153-.231 0-.457.04-.674.118l-.402-1.108c.346-.125.708-.188 1.076-.188.419 0 .83.082 1.216.243l-.453 1.088z"/></svg>
+                                <div class="ms-2 me-auto">
+                                  <h3 class="fw-bold">GOAL 2</h3>
+                                  How do people feel about their experience on the LBH website?
+                                </div>
+                              </li>
+                              <li class="d-flex align-items-center col-lg-6 my-2">
+                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="goal-icon"><path d="M24 20l-6.455 4-5.545-4-5.545 4-6.455-4v-20l6.455 4 5.545-4 5.545 4 6.455-4v20zm-11.5-13h-1v-5.406l-4.5 3.246v4.16h-1v-4.106l-5-3.098v17.647l5 3.099v-6.542h1v6.374l4.5-3.246v-5.128h1v5.128l4.5 3.246v-5.374h1v5.542l5-3.099v-17.647l-5 3.098v3.106h-1v-3.16l-4.5-3.246v5.406zm8.172 7.016l-1.296-1.274 1.273-1.293-.708-.702-1.272 1.294-1.294-1.271-.703.702 1.296 1.276-1.273 1.296.703.703 1.277-1.298 1.295 1.275.702-.708zm-14.102-.606c-.373 0-.741-.066-1.092-.195l.407-1.105c.221.081.451.122.685.122.26 0 .514-.05.754-.149l.448 1.09c-.383.157-.787.237-1.202.237zm-2.601-2.374c-.535 0-.969.433-.969.968 0 .534.434.968.969.968.535 0 .969-.434.969-.968 0-.535-.434-.968-.969-.968zm11.271 1.591l-1.659-.945.583-1.024 1.66.945-.584 1.024zm-6.455-.02l-.605-1.011 1.638-.981.606 1.01-1.639.982zm3.918-1.408c-.243-.101-.5-.153-.763-.153-.231 0-.457.04-.674.118l-.402-1.108c.346-.125.708-.188 1.076-.188.419 0 .83.082 1.216.243l-.453 1.088z"/></svg>
+                                <div class="ms-2 me-auto">
+                                  <h3 class="fw-bold">Goal 3</h3>
+                                  Cras justo odio
+                                </div>
+                              </li>
+                            </ol>
+                        <div class="">
+                            <h3 id="targeting" class="mt-4">Population Targeting & Sampling</h3>
+                            <p>Lorem ipsum lorem ipsum lorem ipsum</p>
+                            <h3 id="administration" class="mt-4">Administration & Tools</h3>
+                            <p>This survey will be conducted online at Lifebridgehealth.org using an invitation popup. To determine the available functionality of the survey, we will have to select a tool, and have provided a brief summary of the available options below.</p> 
+                            <p>Overall, we recommend the free tier of Hotjar for its ability to ask unlimited questions and receive unlimited responses, its moderate range of question types, and embed display options.</p>
+                            <p>With the Hotjar code added to the site, we can also collect continuous heatmapping data from the homepage (and/or any other key pages on the site) to determine where users are most drawn to, and what parts of the page they click the most.</p>
+                                <div class="tools-table my-2">
+                                    <table class="">
+                                    <tbody>
+                                    <tr data-row="row-4r2en9">
+                                    <td colspan="1" rowspan="1" data-row="row-4r2en9" data-cell="cell-wabb2q">
+                                    <div class="qlbt-cell-line" data-row="row-4r2en9" data-cell="cell-wabb2q" data-rowspan="1" data-colspan="1" data-block-id="block-b8e0468b-f683-47e5-9ed9-8484afc2251b"><strong>Tool</strong></div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-4r2en9" data-cell="cell-3rkojo">
+                                    <div class="qlbt-cell-line" data-row="row-4r2en9" data-cell="cell-3rkojo" data-rowspan="1" data-colspan="1" data-block-id="block-fb140c9a-eb09-4847-bffd-532331802559">Typeform</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-4r2en9" data-cell="cell-m02d28">
+                                    <div class="qlbt-cell-line" data-row="row-4r2en9" data-cell="cell-m02d28" data-rowspan="1" data-colspan="1" data-block-id="block-67f4fa91-5e7d-4317-98a9-47dc3347d1a9">Mouseflow</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-4r2en9" data-cell="cell-48szvy">
+                                    <div class="qlbt-cell-line" data-row="row-4r2en9" data-cell="cell-48szvy" data-rowspan="1" data-colspan="1" data-block-id="block-2fc12f6f-327c-4e44-8b70-b870eb389836">Hotjar</div>
+                                    </td>
+                                    </tr>
+                                    <tr data-row="row-58u6z3">
+                                    <td colspan="1" rowspan="1" data-row="row-58u6z3" data-cell="cell-kw4hia">
+                                    <div class="qlbt-cell-line" data-row="row-58u6z3" data-cell="cell-kw4hia" data-rowspan="1" data-colspan="1" data-block-id="block-316494ab-78be-4ac7-822e-97a055923745"><strong>URL</strong></div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-58u6z3" data-cell="cell-e6jiu9">
+                                    <div class="qlbt-cell-line" data-row="row-58u6z3" data-cell="cell-e6jiu9" data-rowspan="1" data-colspan="1" data-block-id="block-27665076-eb0e-47aa-86a6-014bdf45c6a5"><a class="ql-link" href="https://typeform.com" target="_blank" rel="noopener noreferrer">https://typeform.com</a></div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-58u6z3" data-cell="cell-ono97n">
+                                    <div class="qlbt-cell-line" data-row="row-58u6z3" data-cell="cell-ono97n" data-rowspan="1" data-colspan="1" data-block-id="block-04c79e8d-81b6-4ddd-89cb-ac2b3e56999e"><a class="ql-link" href="https://mouseflow.com" target="_blank" rel="noopener noreferrer">https://mouseflow.com</a></div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-58u6z3" data-cell="cell-ylk041">
+                                    <div class="qlbt-cell-line" data-row="row-58u6z3" data-cell="cell-ylk041" data-rowspan="1" data-colspan="1" data-block-id="block-df0523aa-3085-4e9c-be37-cb150c8820fd"><a class="ql-link" href="https://hotjar.com" target="_blank" rel="noopener noreferrer">https://hotjar.com</a></div>
+                                    </td>
+                                    </tr>
+                                    <tr data-row="row-w147tn">
+                                    <td colspan="1" rowspan="1" data-row="row-w147tn" data-cell="cell-5wpp73">
+                                    <div class="qlbt-cell-line" data-row="row-w147tn" data-cell="cell-5wpp73" data-rowspan="1" data-colspan="1" data-block-id="block-42a4cc75-d8ee-4f67-ada4-b114996af293"><strong>Cost</strong></div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-w147tn" data-cell="cell-wqwq2j">
+                                    <div class="qlbt-cell-line" data-row="row-w147tn" data-cell="cell-wqwq2j" data-rowspan="1" data-colspan="1" data-block-id="block-4cdb0065-c439-4243-a4c8-791250a4444e">$0</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-w147tn" data-cell="cell-rt2mdi">
+                                    <div class="qlbt-cell-line" data-row="row-w147tn" data-cell="cell-rt2mdi" data-rowspan="1" data-colspan="1" data-block-id="block-bf48474c-95a9-4b5a-93ee-aeb34b1096a7">$0</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-w147tn" data-cell="cell-5a4dw7">
+                                    <div class="qlbt-cell-line" data-row="row-w147tn" data-cell="cell-5a4dw7" data-rowspan="1" data-colspan="1" data-block-id="block-f1d1f1f8-a11b-41cf-97f7-cc470fb8737b">$0</div>
+                                    </td>
+                                    </tr>
+                                    <tr data-row="row-h5orqz">
+                                    <td colspan="1" rowspan="1" data-row="row-h5orqz" data-cell="cell-ksu8u2">
+                                    <div class="qlbt-cell-line" data-row="row-h5orqz" data-cell="cell-ksu8u2" data-rowspan="1" data-colspan="1" data-block-id="block-d071499b-110f-46b1-8fda-a1926542499a"><strong>Survey Embedding Capabilities</strong></div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-h5orqz" data-cell="cell-rzc5hn">
+                                    <ul>
+                                    <li>presentation triggers (exit intent, set time, scrolling)</li>
+                                    <li>conversational format available</li>
+                                    </ul>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-h5orqz" data-cell="cell-2sptod">
+                                    <ul>
+                                    <li>presentation triggers (delay, inactivity, etc.)</li>
+                                    <li>page and device segmentation</li>
+                                    <li>GTM tag segmentation</li>
+                                    </ul>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-h5orqz" data-cell="cell-e2pr5k">
+                                    <ul>
+                                    <li>presentation triggers (exit intent, set time, scrolling)</li>
+                                    <li>page and device segmentation</li>
+                                    </ul>
+                                    </td>
+                                    </tr>
+                                    <tr data-row="row-su7g2r">
+                                    <td colspan="1" rowspan="1" data-row="row-su7g2r" data-cell="cell-yk415q">
+                                    <div class="qlbt-cell-line" data-row="row-su7g2r" data-cell="cell-yk415q" data-rowspan="1" data-colspan="1" data-block-id="block-5f139237-7e96-4545-8743-42d558ffdb1b"><strong>Survey Display Options</strong></div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-su7g2r" data-cell="cell-c8g3i1">
+                                    <ul>
+                                    <li>Full Screen takeover</li>
+                                    <li>Sidebar Feedback widget</li>
+                                    <li>Bottom Right Icon</li>
+                                    </ul>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-su7g2r" data-cell="cell-meaget">
+                                    <ul>
+                                    <li>Full Screen takeover</li>
+                                    <li>Bottom Right popup</li>
+                                    <li>Bottom right icon</li>
+                                    </ul>
+                                    <div class="qlbt-cell-line" data-row="row-su7g2r" data-cell="cell-meaget" data-rowspan="1" data-colspan="1" data-block-id="block-4018e0f4-fba6-48da-97f1-b05ca46ea003">&nbsp;</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-su7g2r" data-cell="cell-c0bsk9">
+                                    <ul>
+                                    <li>Full screen takeover</li>
+                                    <li>Sidebar Feedback widget</li>
+                                    <li>Bottom right popup</li>
+                                    </ul>
+                                    </td>
+                                    </tr>
+                                    <tr data-row="row-bcir2m">
+                                    <td colspan="1" rowspan="1" data-row="row-bcir2m" data-cell="cell-b1okyj">
+                                    <div class="qlbt-cell-line" data-row="row-bcir2m" data-cell="cell-b1okyj" data-rowspan="1" data-colspan="1" data-block-id="block-d4343902-8e5f-4646-a287-a2305b07a50d"><strong>Question Limit</strong></div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-bcir2m" data-cell="cell-s7bv3q">
+                                    <div class="qlbt-cell-line" data-row="row-bcir2m" data-cell="cell-s7bv3q" data-rowspan="1" data-colspan="1" data-block-id="block-b923c76a-946a-4099-8b17-b150a71fc1e3">10</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-bcir2m" data-cell="cell-k7kgwy">
+                                    <div class="qlbt-cell-line" data-row="row-bcir2m" data-cell="cell-k7kgwy" data-rowspan="1" data-colspan="1" data-block-id="block-ad0e77bd-f45f-44cf-93d6-c75f222b8ff8">11</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-bcir2m" data-cell="cell-0f516l">
+                                    <div class="qlbt-cell-line" data-row="row-bcir2m" data-cell="cell-0f516l" data-rowspan="1" data-colspan="1" data-block-id="block-5b0e3231-643e-4e99-9617-b1794f5f0acc">unlimited</div>
+                                    </td>
+                                    </tr>
+                                    <tr data-row="row-d0oxk5">
+                                    <td colspan="1" rowspan="1" data-row="row-d0oxk5" data-cell="cell-2rntea">
+                                    <div class="qlbt-cell-line" data-row="row-d0oxk5" data-cell="cell-2rntea" data-rowspan="1" data-colspan="1" data-block-id="block-58e5c7d0-d91c-4c18-9630-6f386dd56b92"><strong>Response Limit</strong></div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-d0oxk5" data-cell="cell-qbafo5">
+                                    <div class="qlbt-cell-line" data-row="row-d0oxk5" data-cell="cell-qbafo5" data-rowspan="1" data-colspan="1" data-block-id="block-bf762ef2-d13f-463d-a22d-4887433e2c59">100 responses</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-d0oxk5" data-cell="cell-i591wp">
+                                    <div class="qlbt-cell-line" data-row="row-d0oxk5" data-cell="cell-i591wp" data-rowspan="1" data-colspan="1" data-block-id="block-f26afc3f-9cf0-493a-8735-1b4d975be9b4">unlimited</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-d0oxk5" data-cell="cell-b9imgc">
+                                    <div class="qlbt-cell-line" data-row="row-d0oxk5" data-cell="cell-b9imgc" data-rowspan="1" data-colspan="1" data-block-id="block-1844b6da-7865-417e-ad47-f55462752117">unlimited</div>
+                                    </td>
+                                    </tr>
+                                    <tr data-row="row-at3grx">
+                                    <td colspan="1" rowspan="1" data-row="row-at3grx" data-cell="cell-p3bvrw">
+                                    <div class="qlbt-cell-line" data-row="row-at3grx" data-cell="cell-p3bvrw" data-rowspan="1" data-colspan="1" data-block-id="block-fed18d64-c623-45f5-8049-59cc0d9d9819"><strong>Question Types available</strong></div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-at3grx" data-cell="cell-j91vjo">
+                                    <ul>
+                                    <li>radio buttons</li>
+                                    <li>checkboxes</li>
+                                    <li>textbox (sm &amp; lg)</li>
+                                    <li>yes/no</li>
+                                    <li>dropdown</li>
+                                    <li>opinion scale (5-10 options)</li>
+                                    <li>Email capture</li>
+                                    <li>Date</li>
+                                    <li>consent</li>
+                                    <li>ranking</li>
+                                    <li>rating</li>
+                                    <li>matrix</li>
+                                    </ul>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-at3grx" data-cell="cell-2wv1il">
+                                    <ul>
+                                    <li>radio buttons</li>
+                                    <li>checkboxes</li>
+                                    <li>textbox (sm &amp; lg)</li>
+                                    <li>NPS</li>
+                                    </ul>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-at3grx" data-cell="cell-b5kf7q">
+                                    <ul>
+                                    <li>Radio buttons</li>
+                                    <li>Checkboxes</li>
+                                    <li>textbox (sm &amp; lg)</li>
+                                    <li>NPS</li>
+                                    <li>Email capture</li>
+                                    <li>Yes/No</li>
+                                    <li>Likert scale (5 &amp; 7 options)</li>
+                                    </ul>
+                                    </td>
+                                    </tr>
+                                    <tr data-row="row-6njh0p">
+                                    <td colspan="1" rowspan="1" data-row="row-6njh0p" data-cell="cell-3cl4b8">
+                                    <div class="qlbt-cell-line" data-row="row-6njh0p" data-cell="cell-3cl4b8" data-rowspan="1" data-colspan="1" data-block-id="block-9ebbd484-657c-4035-822e-1f4febd26935"><strong>Other features</strong></div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-6njh0p" data-cell="cell-5np963">
+                                    <ul>
+                                    <li>visual design customization, including background images, and other elements.</li>
+                                    </ul>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-6njh0p" data-cell="cell-o4pbiv">
+                                    <ul>
+                                    <li>heatmaps &amp; session recordings</li>
+                                    <li>form analytics</li>
+                                    <li>funnel analytics</li>
+                                    <li>integration with Google Tag Manager</li>
+                                    <li></li>
+                                    </ul>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-6njh0p" data-cell="cell-uhm04j">
+                                    <ul>
+                                    <li>heatmaps &amp; session recordings</li>
+                                    </ul>
+                                    </td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
+                                <h3>Ensuring Quality</h3>
+                                <p>To ensure quality data, we recommend collecting as many feedback survey responses as possible, to account for diversity in the user groups and ideally allow for segmentation of the data (depending on the number of responses received).</p>
+                                <h3 id="budget" class="my-4">Budget &amp; Timeline</h3>
+                                <div class="budget-table mt-4">
+                                    <div class="">
+                                    <table class="">
+                                    <tbody>
+                                    <tr data-row="row-38r3ke">
+                                    <td colspan="1" rowspan="1" data-row="row-38r3ke" data-cell="cell-zcnv20">
+                                    <div class="qlbt-cell-line" data-row="row-38r3ke" data-cell="cell-zcnv20" data-rowspan="1" data-colspan="1" data-block-id="block-865f8b4e-f6e4-4478-be59-a5f53bcba459">Task</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-38r3ke" data-cell="cell-pzvr9s">
+                                    <div class="qlbt-cell-line" data-row="row-38r3ke" data-cell="cell-pzvr9s" data-rowspan="1" data-colspan="1" data-block-id="block-392e9d40-9602-4f34-aa26-dc6a09209fc3">Hours</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-38r3ke" data-cell="cell-988wuv">
+                                    <div class="qlbt-cell-line" data-row="row-38r3ke" data-cell="cell-988wuv" data-rowspan="1" data-colspan="1" data-block-id="block-444677bb-3c0d-486c-9d34-3c0cbeb22289">Notes</div>
+                                    </td>
+                                    </tr>
+                                    <tr data-row="row-wki6ph">
+                                    <td colspan="1" rowspan="1" data-row="row-wki6ph" data-cell="cell-wt0hds">
+                                    <div class="qlbt-cell-line" data-row="row-wki6ph" data-cell="cell-wt0hds" data-rowspan="1" data-colspan="1" data-block-id="block-193c16f5-2f7e-493c-80f2-79539947f164">Draft Survey Methodology &amp; Questions</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-wki6ph" data-cell="cell-sb5eh5">
+                                    <div class="qlbt-cell-line" data-row="row-wki6ph" data-cell="cell-sb5eh5" data-rowspan="1" data-colspan="1" data-block-id="block-2dc5eed2-621c-4236-86bb-da09e5054370">16</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-wki6ph" data-cell="cell-uad6t9">
+                                    <div class="qlbt-cell-line" data-row="row-wki6ph" data-cell="cell-uad6t9" data-rowspan="1" data-colspan="1" data-block-id="block-7b447898-8da1-434a-bc04-40825c9a82bd">Includes tools research, screening criteria (if any), survey questions.</div>
+                                    </td>
+                                    </tr>
+                                    <tr data-row="row-vjki3c">
+                                    <td colspan="1" rowspan="1" data-row="row-vjki3c" data-cell="cell-mqa00m">
+                                    <div class="qlbt-cell-line" data-row="row-vjki3c" data-cell="cell-mqa00m" data-rowspan="1" data-colspan="1" data-block-id="block-74ec984e-63bb-4882-95f3-b21c2b8bfe5e">Prototype Survey</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-vjki3c" data-cell="cell-sn4346">
+                                    <div class="qlbt-cell-line" data-row="row-vjki3c" data-cell="cell-sn4346" data-rowspan="1" data-colspan="1" data-block-id="block-73abbc9d-b588-45b3-92bc-727edd9ca589">2</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-vjki3c" data-cell="cell-b5i4x2">
+                                    <div class="qlbt-cell-line" data-row="row-vjki3c" data-cell="cell-b5i4x2" data-rowspan="1" data-colspan="1" data-block-id="block-cfb69d0c-d4df-475d-acd3-8b2d8149c0db">Initial prototype of the survey, including tool styles</div>
+                                    </td>
+                                    </tr>
+                                    <tr data-row="row-rky57p">
+                                    <td colspan="1" rowspan="1" data-row="row-rky57p" data-cell="cell-8kohtn">
+                                    <div class="qlbt-cell-line" data-row="row-rky57p" data-cell="cell-8kohtn" data-rowspan="1" data-colspan="1" data-block-id="block-98548afa-e8c6-476b-a12a-ac932bdaf275">Survey Review &amp; Revisions</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-rky57p" data-cell="cell-nl8e80">
+                                    <div class="qlbt-cell-line" data-row="row-rky57p" data-cell="cell-nl8e80" data-rowspan="1" data-colspan="1" data-block-id="block-4bb4dcb6-0ceb-4620-95d8-ba6043af6dc5">6</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-rky57p" data-cell="cell-58mjva">
+                                    <div class="qlbt-cell-line" data-row="row-rky57p" data-cell="cell-58mjva" data-rowspan="1" data-colspan="1" data-block-id="block-5d292b91-d892-4316-820c-b7c89e8d2e9a">LBH review &amp; 1 round of revisions.</div>
+                                    </td>
+                                    </tr>
+                                    <tr data-row="row-z98c6f">
+                                    <td colspan="1" rowspan="1" data-row="row-z98c6f" data-cell="cell-y07hu9">
+                                    <div class="qlbt-cell-line" data-row="row-z98c6f" data-cell="cell-y07hu9" data-rowspan="1" data-colspan="1" data-block-id="block-fcbcd197-648a-4633-a270-748859cc52c0">Data Analysis &amp; Insights</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-z98c6f" data-cell="cell-xgoppd">
+                                    <div class="qlbt-cell-line" data-row="row-z98c6f" data-cell="cell-xgoppd" data-rowspan="1" data-colspan="1" data-block-id="block-3ea9781b-5908-40bb-989f-fa8145855c16">16</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-z98c6f" data-cell="cell-e1bvjz">
+                                    <div class="qlbt-cell-line" data-row="row-z98c6f" data-cell="cell-e1bvjz" data-rowspan="1" data-colspan="1" data-block-id="block-21e7659d-9f8b-498f-91c7-2b6dd3c438e4">To be shared as part of the Discovery Summary</div>
+                                    </td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                                    </div>
+                                </div>
+
+                                <h3 id="roles" class="my-4">Roles & Responsibilities</h3>
+                                <div class="roles-table my-2">
+                                    <table class=""><colgroup><col width="335" /><col width="150" /></colgroup>
+                                    <tbody>
+                                    <tr data-row="row-b3bvbi">
+                                    <td colspan="1" rowspan="1" data-row="row-b3bvbi" data-cell="cell-brevvu">
+                                    <div class="qlbt-cell-line" data-row="row-b3bvbi" data-cell="cell-brevvu" data-rowspan="1" data-colspan="1" data-block-id="block-079861af-da5d-4761-908c-eb487512786c">Draft Survey Questions &amp; Methodology</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-b3bvbi" data-cell="cell-2zrici">
+                                    <div class="qlbt-cell-line" data-row="row-b3bvbi" data-cell="cell-2zrici" data-rowspan="1" data-colspan="1" data-block-id="block-364a2e27-26e0-4bda-8c23-1383fe2ce7b0">Tony</div>
+                                    </td>
+                                    </tr>
+                                    <tr data-row="row-t4dczb">
+                                    <td colspan="1" rowspan="1" data-row="row-t4dczb" data-cell="cell-buzyv8">
+                                    <div class="qlbt-cell-line" data-row="row-t4dczb" data-cell="cell-buzyv8" data-rowspan="1" data-colspan="1" data-block-id="block-a6fad76b-a5c5-4ba9-a7af-2fcd38682630">Socialize for Exec Buy-in</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-t4dczb" data-cell="cell-jm5vsh">
+                                    <div class="qlbt-cell-line" data-row="row-t4dczb" data-cell="cell-jm5vsh" data-rowspan="1" data-colspan="1" data-block-id="block-d966ba39-3ee4-40be-9bfc-207e9e513253">Aaron</div>
+                                    </td>
+                                    </tr>
+                                    <tr data-row="row-ceup4r">
+                                    <td colspan="1" rowspan="1" data-row="row-ceup4r" data-cell="cell-iip1nr">
+                                    <div class="qlbt-cell-line" data-row="row-ceup4r" data-cell="cell-iip1nr" data-rowspan="1" data-colspan="1" data-block-id="block-d11556b1-f9ad-418d-a951-c6b47ea88a88">Create a Hotjar Account</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-ceup4r" data-cell="cell-eqyvrk">
+                                    <div class="qlbt-cell-line" data-row="row-ceup4r" data-cell="cell-eqyvrk" data-rowspan="1" data-colspan="1" data-block-id="block-89a2b057-6708-4ed3-92a1-9552139c2674">Tony</div>
+                                    </td>
+                                    </tr>
+                                    <tr data-row="row-9a5vze">
+                                    <td colspan="1" rowspan="1" data-row="row-9a5vze" data-cell="cell-jwxscm">
+                                    <div class="qlbt-cell-line" data-row="row-9a5vze" data-cell="cell-jwxscm" data-rowspan="1" data-colspan="1" data-block-id="block-a299d7f0-325c-4b0b-aa6e-4fa96d2069f0">Build Survey in Hotjar</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-9a5vze" data-cell="cell-t9njb2">
+                                    <div class="qlbt-cell-line" data-row="row-9a5vze" data-cell="cell-t9njb2" data-rowspan="1" data-colspan="1" data-block-id="block-152f4a85-28bd-463c-91eb-88f45b0cbde5">Tony</div>
+                                    </td>
+                                    </tr>
+                                    <tr data-row="row-n41b0n">
+                                    <td colspan="1" rowspan="1" data-row="row-n41b0n" data-cell="cell-rm3e3g">
+                                    <div class="qlbt-cell-line" data-row="row-n41b0n" data-cell="cell-rm3e3g" data-rowspan="1" data-colspan="1" data-block-id="block-b57b0d5c-33f6-4e44-9c7d-e7164534e542">Add Code to Current Site</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-n41b0n" data-cell="cell-0wb1ax">
+                                    <div class="qlbt-cell-line" data-row="row-n41b0n" data-cell="cell-0wb1ax" data-rowspan="1" data-colspan="1" data-block-id="block-c211e64e-8890-45cf-985d-c6d9a3fc6052">Aaron/Josh</div>
+                                    </td>
+                                    </tr>
+                                    <tr data-row="row-caa1dj">
+                                    <td colspan="1" rowspan="1" data-row="row-caa1dj" data-cell="cell-01tyo0">
+                                    <div class="qlbt-cell-line" data-row="row-caa1dj" data-cell="cell-01tyo0" data-rowspan="1" data-colspan="1" data-block-id="block-2e08cb57-4d26-4cb8-8784-76833af0b769">QA &amp; Survey Approval <em>(Send to employees who are also patients as a pilot)</em></div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-caa1dj" data-cell="cell-v8w1sh">
+                                    <div class="qlbt-cell-line" data-row="row-caa1dj" data-cell="cell-v8w1sh" data-rowspan="1" data-colspan="1" data-block-id="block-21aff953-53e8-4b41-8f87-94d0845c9f34">Aaron</div>
+                                    </td>
+                                    </tr>
+                                    <tr data-row="row-gsm8e2">
+                                    <td colspan="1" rowspan="1" data-row="row-gsm8e2" data-cell="cell-m3xip6">
+                                    <div class="qlbt-cell-line" data-row="row-gsm8e2" data-cell="cell-m3xip6" data-rowspan="1" data-colspan="1" data-block-id="block-3bd92846-9bc1-42de-adc4-4bdc683bcefc">Survey Launch &amp; Monitoring</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-gsm8e2" data-cell="cell-4qgqxl">
+                                    <div class="qlbt-cell-line" data-row="row-gsm8e2" data-cell="cell-4qgqxl" data-rowspan="1" data-colspan="1" data-block-id="block-1ab51bcd-861a-48dd-8af7-7bde6e8c1bb8">Tony</div>
+                                    </td>
+                                    </tr>
+                                    <tr data-row="row-n30g67">
+                                    <td colspan="1" rowspan="1" data-row="row-n30g67" data-cell="cell-3o4awb">
+                                    <div class="qlbt-cell-line" data-row="row-n30g67" data-cell="cell-3o4awb" data-rowspan="1" data-colspan="1" data-block-id="block-f17aa7e9-8c7e-4134-b78d-cd351feab676">Survey Analysis</div>
+                                    </td>
+                                    <td colspan="1" rowspan="1" data-row="row-n30g67" data-cell="cell-hl642o">
+                                    <div class="qlbt-cell-line" data-row="row-n30g67" data-cell="cell-hl642o" data-rowspan="1" data-colspan="1" data-block-id="block-934747a1-d0a2-488d-b00f-37048837ec64">Tony</div>
+                                    </td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
+                        </div>
+                        <div class="" id="questions">
+                            <h3>Survey Questions</h3>
+                            <h4>Introduction Lanuguage</h4>
+                            <p>We're collecting feedback on the current LifeBridge Health website to identify key issues to solve and opportunities for improvement as we're rebuilding the website.</p>
+                            <h4>Demographic Questions</h4>
+                            <p>To better understand the makeup of the different audiences coming to the website, we intend to ask</p>
+                            <ul>
+                                <li>What is your affiliation with </li>
+                                <li>Code Snippet for Typeform</li>
+                                <li>Code Snippet for SurveyMonkey</li>
+                                <li>Anything else around the survey data to include?</li>
+                            </ul>
+                            <h5>Experience Questions</h5>
+                            <ul>
+                                <li>Is there an 18F methods page?</li>
+                                <li>Code Snippet for Typeform</li>
+                                <li>Code Snippet for SurveyMonkey</li>
+                                <li>Anything else around the survey data to include?</li>
+                            </ul>
+                        </div>
+                        <div class="" id="resources">
+                            <h3>Survey Resources</h3>
+                            <ul>
+                                <li>Is there an 18F methods page?</li>
+                                <li>Code Snippet for Typeform</li>
+                                <li>Code Snippet for SurveyMonkey</li>
+                                <li>Anything else around the survey data to include?</li>
+                            </ul>
+                        </div>
+                        <h3>Survey Resources</h3>
+                        <div class="list-group " id="resources">
+                            
+                          <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Is there an 18F methods page?</h5>
+                            </div>
+                            <small>And some small print.</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Code Snippet for Typeform</h5>
+                            </div>
+                            <p class="mb-1">Some placeholder content in a paragraph.</p>
+                            <small class="text-muted">And some muted small print.</small>
+                            <div style="padding:20px;background-color:#232323;color:#ffffff"><code>&#60;div data-tf-popover="eYlgbAcC" data-tf-button-color="#0445AF" data-tf-button-text="Launch me" data-tf-iframe-props="title=Website Feedback Survey Template" style="all:unset;"&#62;&#60;/div&#62;&#60;script src="//embed.typeform.com/next/embed.js"&#62;&#60;/script&#62;</code></div>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Code Snippet for SurveyMonkey</h5>
+                            </div>
+                            <p class="mb-1">Some placeholder content in a paragraph.</p>
+                            <small class="text-muted">And some muted small print.</small>
+                          </a>
+                          <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Anything else around the survey data that we need to include?</h5>
+                            </div>
+                            <p class="mb-1">Some placeholder content in a paragraph.</p>
+                            <small class="text-muted">And some muted small print.</small>
+                          </a>
+                        </div>
+
+                        <div class=" my-4">
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    <!-- embed invitation for SurveyMonkey -->
+                    <!-- <script>(function(t,e,s,o){var n,a,c;t.SMCX=t.SMCX||[],e.getElementById(o)||(n=e.getElementsByTagName(s),a=n[n.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=o,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd7YIZ1AdNAo67TYLSoSuFUYdOvJJ9BoadBOCj8ACfmop.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script> -->
+                    <!-- end embed invitation for SurveyMonkey -->
+
+                    <!-- embed code for Typeform -->
+                    <div data-tf-popover="eYlgbAcC" data-tf-button-color="#0445AF" data-tf-button-text="Launch me" data-tf-iframe-props="title=Website Feedback Survey Template" style="all:unset;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
