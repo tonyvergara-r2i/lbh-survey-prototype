@@ -1,6 +1,9 @@
 <html>
 <head>
-    
+    <title>LifeBridge Health — User Survey Documentation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300;1,700&family=Montserrat:ital,wght@0,200;0,700;1,200;1,700&display=swap" rel="stylesheet">
@@ -17,11 +20,16 @@
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
     <style type="text/css">
+        body {
+            position: relative;
+        }
         .content-section {
           min-height: 2000px;
         }
@@ -59,7 +67,7 @@
         .sidebar-item a {
             color: #2d2c2b;
         }
-        .sidebar-item li:hover,.sidebar-item li:active {
+        .sidebar-item li:hover,.sidebar-item li:active, .sidebar-item a:active  {
             background-color: #fce300;
         }
         .sidebar-item li:hover,.sidebar-item a:hover {
@@ -169,7 +177,7 @@
     </style>
 
 </head>
-<body>
+<body  data-bs-spy="scroll" data-bs-target="#sidebar-nav" data-bs-offset="0" tabindex="0">
     <div class="container-fluid">
         <section id="hero"> 
             <div class="container col-xxl-8 px-4 py-5">
@@ -182,31 +190,31 @@
                     <h1 class="display-5 fw-bold lh-1 mb-3">User Survey Prototype & Documentation</h1>
                     <p class="lead">Our user surveys uncovers limitations and pain points that are hard to capture through less direct research in order to inform recommendations for optimizing the user experience. This document is intended to provide guidance on the optimal approach for this research based on the project needs and the client’s access to users.</p>
                     <p>This survey will be embedded on the current <a href="https://www.lifebridgehealth.org">LifeBridge Health website</a> website, and we've included on a functional sample of the survey, which you can try out by pressing "Next" in the widget below. We welcome your feedback; thanks!</p>
-                    <h6 style="text-transform: uppercase;">V 0.1: Last Updated — December 17, 2021</h6>
+                    <h6 style="text-transform: uppercase;"><span style="background:#fce300;color:#2d2c2b" class="badge badge-pill badge-secondary">IN PROGRESS</span> V 0.1: Last Updated — December 17, 2021</h6>
                   </div>
                 </div>
               </div>
         </section>
         <section class="container mt-4">
             <div class="row">
-                <div class="col-md-3 col-sm-12">
+                <div class="col-md-3 hidden-sm">
 
                   <div class="sidebar-item px-4">
                     <div class="make-me-sticky">
                       <h3 style="border-color:#2d2c2b" class="h6 mt-8">USER SURVEY</h3>
-                      <nav id="sidebar-nav">
-                          <li><a href="#background">Background</a></li>
+                      <div id="sidebar-nav" class="scrollspy" data-spy="affix">
+                          <ul role="tablist"><li class="active"><a href="#background">Background</a></li>
                           <li><a href="#goals">Goals</a></li>
                           <li><a href="#targeting">Targeting & Sampling</a></li>
                           <li><a href="#administration">Administration & Tools</a></li>
                           <li><a href="#quality">Ensuring Quality</a></li>
                           <li><a href="#budget">Budget & Timeline</a></li>
                           <li><a href="#roles">Roles & Responsibilities</a></li>
-                          <li><a href="#questions">Survey Topics & Questions</a></li>
-                          <li><a href="#resources">Resources</a></li>
+                          <li><a href="#questions">Survey Topics & Questions</a></li></ul>
+                          
                           
 
-                      </nav>
+                      </div>
                     </div>
                   </div>
               
@@ -214,7 +222,7 @@
                 </div>
                 <div class="col-md-9 col-sm-12">
 
-                    <div class="content-section" data-spy="scroll" data-target="#sidebar-navbar" data-offset="0">
+                    <div class="content-section" >
                         
 
                         <div class="alert alert-info" id="background" role="alert"><h6>SURVEY BACKGROUND</h6><p>The website redesign feedback survey for LifeBridge Health was developed to collect information on key issues and opportunities that we should know about as we begin to redesign the website. We aim to improve the content of this survey through an iterative review process.</p></div>
@@ -441,8 +449,10 @@
                                     </tbody>
                                     </table>
                                 </div>
-                                <h3>Ensuring Quality</h3>
-                                <p>To ensure quality data, we recommend collecting as many feedback survey responses as possible, to account for diversity in the user groups and ideally allow for segmentation of the data (depending on the number of responses received).</p>
+                                <section id="quality">
+                                    <h3>Ensuring Quality</h3>
+                                    <p>To ensure quality data, we recommend collecting as many feedback survey responses as possible, to account for diversity in the user groups and ideally allow for segmentation of the data (depending on the number of responses received).</p>
+                                </div>
                                 <h3 id="budget" class="my-4">Budget &amp; Timeline</h3>
                                 <div class="budget-table mt-4">
                                     <div class="">
@@ -638,5 +648,13 @@
             </div>
         </section>
     </div>
+    <script>
+   // initiates scrollspy on body targeting the nav wrapper
+   var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '#navbar-example'
+})
+   
+});
+</script>
 </body>
 </html>
