@@ -175,6 +175,16 @@
         #questions ul {
             padding-bottom: 20px!important;
         }
+        #sidebar-nav li {
+            background: #f2f2f2; /* default color */
+            /* "to left" / "to right" - affects initial color */
+            background: linear-gradient(to left, #f2f2f2 50%, #fce300 50%) right;
+            background-size: 200%;
+            transition: .5s ease-out;
+        }
+        #sidebar-nav li:hover {
+            background-position: left;
+        }
     </style>
 
 </head>
